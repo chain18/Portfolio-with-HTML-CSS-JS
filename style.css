@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    background: #111;
+}
+.salute{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+     overflow: hidden;
+}
+.saluteTextContainer{
+    flex: 3;
+}
+.saluteImgContainer{
+    flex: 1;
+}
+.saluteImg{
+    width: 100%;
+}
+.saluteText{
+    color: aliceblue;
+    font-size: 60vw;
+    cursor: default;
+}
+.nameContainer{
+    height: 100vh;
+   background: url("./img/bg-cc.png");
+}
+.name{
+    font-size: 20vw;
+    color: white;
+    cursor: default;
+    -webkit-text-stroke: 1px #111;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.jobTitleContainer{
+height: 100vh;
+}
+
+.one{
+background: url("./img/bg-dotrain.png") ;
+  background-repeat: repeat-y;
+background-position: center;
+}
+.two{
+background: url("./img/bg-chain.png") ;
+}
+.jobTitle{
+    font-size: 10vw;
+    color: white;
+    line-height: 100vh;
+    cursor: default;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0px 100px;
+}
+
+.projectsTitle{
+    font-size: 10vw;
+    color: whitesmoke;
+}
+.project{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.notebook{
+    flex: 1;
+    width: 600px;
+    height: 350px;
+    position: relative;
+}
+.notebookScreen{
+    width: 510px;
+    height: 330px;
+    position: absolute;
+    border-radius: 10px;
+    top: 15px;
+    left: 85px;
+    overflow: scroll;
+}
+
+.notebookScreen::-webkit-scrollbar{
+    display: none;
+}
+.courseFlowApp{
+    width: 100%;
+}
+
+.projectDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.projectTitle{
+    font-size: 7vw;
+    background: linear-gradient(109.54deg, #95BEFF 18.21%, #0040E6 95.27%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.projectDetail{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+.projectButton{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.projectButton::after{
+    content: "View More";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    color: #222;
+}
+.projectButton:hover.projectButton::after{
+    transform: translateX(100%);
+
+}
+
+.githupContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.githubTitle{
+    font-size: 100px;
+    color: whitesmoke;
+}
+.dates{
+    padding: 10px;
+    color:whitesmoke;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.githupChart{
+    width: 820px;
+    text-align: center;
+}
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 3s all ease;
+}
+
+.active:nth-child(4n){
+    background: #195b2c;
+    
+}
+.githupChart:hover .active:nth-child(2n+1){
+    background: #195b2c;
+}
+.githupChart:hover .active:nth-child(2n){
+    background: #063f24;
+}
